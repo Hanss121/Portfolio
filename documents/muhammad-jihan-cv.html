@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Muhammad Jihan</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #111827;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.6px;
+        line-height: 1.38;
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .page {
+        min-height: 273mm;
+      }
+
+      .header {
+        align-items: flex-start;
+        border-bottom: 2px solid #00d27a;
+        display: flex;
+        gap: 18px;
+        justify-content: space-between;
+        padding-bottom: 11px;
+      }
+
+      .name {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        line-height: 1;
+      }
+
+      .role {
+        color: #047857;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 5px;
+      }
+
+      .summary {
+        color: #374151;
+        font-size: 10.3px;
+        margin-top: 8px;
+        max-width: 560px;
+      }
+
+      .contact {
+        color: #374151;
+        font-size: 9.3px;
+        line-height: 1.55;
+        min-width: 210px;
+        text-align: right;
+      }
+
+      .contact strong {
+        color: #111827;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 1.15fr 0.85fr;
+        margin-top: 13px;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        border-bottom: 1px solid #d1d5db;
+        color: #111827;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.9px;
+        margin-bottom: 7px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+      }
+
+      .item {
+        margin-bottom: 8px;
+      }
+
+      .item-head {
+        align-items: baseline;
+        display: flex;
+        gap: 8px;
+        justify-content: space-between;
+      }
+
+      .item-title {
+        font-size: 10.6px;
+        font-weight: 800;
+      }
+
+      .item-meta {
+        color: #047857;
+        font-size: 8.8px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .item-subtitle {
+        color: #4b5563;
+        font-size: 9.1px;
+        font-weight: 700;
+        margin-top: 1px;
+      }
+
+      ul {
+        margin: 4px 0 0;
+        padding-left: 14px;
+      }
+
+      li {
+        margin-bottom: 2.5px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .tag {
+        background: #ecfdf5;
+        border: 1px solid #a7f3d0;
+        border-radius: 999px;
+        color: #065f46;
+        font-size: 8.6px;
+        font-weight: 700;
+        padding: 2.5px 6px;
+      }
+
+      .compact-list {
+        color: #374151;
+        display: grid;
+        gap: 4px;
+      }
+
+      .compact-list strong {
+        color: #111827;
+      }
+
+      .project-line {
+        border-left: 3px solid #00d27a;
+        margin-bottom: 6px;
+        padding-left: 7px;
+      }
+
+      .project-line strong {
+        display: block;
+        font-size: 9.8px;
+      }
+
+      .project-line span {
+        color: #4b5563;
+        display: block;
+        font-size: 8.9px;
+        margin-top: 1px;
+      }
+
+      .footer-note {
+        border-top: 1px solid #e5e7eb;
+        color: #6b7280;
+        font-size: 8px;
+        margin-top: 8px;
+        padding-top: 6px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div>
+          <h1 class="name">Muhammad Jihan</h1>
+          <p class="role">Full Stack & Mobile Developer | UI/UX Designer</p>
+          <p class="summary">
+            Developer yang fokus membangun aplikasi bisnis, dashboard operasional, aplikasi mobile offline-first, dan UI/UX produk digital untuk UMKM serta kebutuhan administrasi. Terbiasa menyusun alur fitur, struktur data, dan tampilan yang mudah digunakan.
+          </p>
+        </div>
+        <div class="contact">
+          <p><strong>Email</strong><br />MuhammadJihan121@gmail.com</p>
+          <p><strong>Telepon / WhatsApp</strong><br />0822-4314-3115</p>
+          <p><strong>Lokasi</strong><br />Demak, Indonesia</p>
+          <p><strong>Portfolio</strong><br />github.com/Hanss121/Portfolio</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <div class="section">
+            <h2 class="section-title">Fokus Pengalaman</h2>
+            <div class="item">
+              <div class="item-head">
+                <h3 class="item-title">Aplikasi bisnis offline-first</h3>
+                <span class="item-meta">2025</span>
+              </div>
+              <p class="item-subtitle">ABROOF, TokoKu, MyRT14</p>
+              <ul>
+                <li>Merancang alur transaksi, stok, keuangan, data warga, kas, iuran, dan laporan agar tetap bisa digunakan walau koneksi terbatas.</li>
+                <li>Membangun struktur modul yang memisahkan data inti seperti barang, transaksi, kategori, warga, dan riwayat pembayaran.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="item-head">
+                <h3 class="item-title">Dashboard & website operasional</h3>
+                <span class="item-meta">2025</span>
+              </div>
+              <p class="item-subtitle">GK Rent Car, Makanan Nusantara, InventoryPRO</p>
+              <ul>
+                <li>Membangun landing page bisnis, katalog, CTA booking, dashboard stok, tabel data, ringkasan metrik, dan layout responsif.</li>
+                <li>Menata hierarki informasi agar data penting mudah discan dan mendukung keputusan operasional.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="item-head">
+                <h3 class="item-title">Desain produk & prototype</h3>
+                <span class="item-meta">2025</span>
+              </div>
+              <p class="item-subtitle">GikuRental, TokoKu</p>
+              <ul>
+                <li>Menyusun flow pengguna, komponen UI, aturan warna, spacing, dan prototype yang siap diterjemahkan ke implementasi.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Proyek Pilihan</h2>
+            <div class="project-line">
+              <strong>ABROOF</strong>
+              <span>Aplikasi mobile manajemen stok, transaksi, pembayaran, backup cloud, dan laporan keuangan untuk UMKM.</span>
+            </div>
+            <div class="project-line">
+              <strong>MyRT14</strong>
+              <span>Aplikasi administrasi RT untuk data warga, KK, iuran, kas, laporan, pencarian, dan backup data.</span>
+            </div>
+            <div class="project-line">
+              <strong>InventoryPRO</strong>
+              <span>Dashboard inventaris web untuk monitoring stok, data barang, ringkasan operasional, tabel, filter, dan chart.</span>
+            </div>
+            <div class="project-line">
+              <strong>GK Rent Car</strong>
+              <span>Website rental mobil responsif dengan katalog armada, informasi layanan, galeri, dan CTA booking WhatsApp.</span>
+            </div>
+            <div class="project-line">
+              <strong>TokoKu & GikuRental</strong>
+              <span>POS offline dan rancangan landing page rental mobil dengan fokus konversi, prototype, dan design system.</span>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="section">
+            <h2 class="section-title">Pendidikan</h2>
+            <div class="item">
+              <div class="item-head">
+                <h3 class="item-title">Teknik Informatika - S.Kom</h3>
+                <span class="item-meta">2021-2025</span>
+              </div>
+              <p class="item-subtitle">Universitas AKI - Semarang</p>
+              <p>Fondasi rekayasa perangkat lunak, pengembangan web, mobile, database, dan sistem informasi.</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Keterampilan Teknis</h2>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Python</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Hive</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Kemampuan Utama</h2>
+            <div class="compact-list">
+              <p><strong>Mobile:</strong> aplikasi Flutter, database lokal, offline-first, transaksi, laporan, backup.</p>
+              <p><strong>Web:</strong> landing page bisnis, dashboard, komponen responsif, tabel, chart, dan CTA.</p>
+              <p><strong>UI/UX:</strong> user flow, prototype, design system, hierarki informasi, dan usability.</p>
+              <p><strong>Operasional:</strong> stok, kas, iuran, order tracking, inventaris, dan administrasi data.</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2 class="section-title">Tools & Pendekatan</h2>
+            <div class="compact-list">
+              <p>Figma, Git, Google Drive backup, responsive design, component-based UI, local-first data, dan validasi alur pengguna.</p>
+              <p>Sedang memperdalam Rust dan backend engineering untuk memperkuat kemampuan sistem.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <p class="footer-note">CV ringkas satu halaman ini disusun dari data portfolio Muhammad Jihan.</p>
+    </main>
+  </body>
+</html>
