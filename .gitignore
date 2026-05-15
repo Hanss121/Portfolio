@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Local editor/system files
+.vscode/
+.idea/
+*.log
+
+# Temporary preview artifacts
+mobile-3d-check.png
+asset-optimization-report.json
+
+# Dependency/build output, if added later
+node_modules/
+dist/
+build/
+.cache/
