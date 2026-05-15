@@ -973,12 +973,12 @@
     const isWebDevice = deviceMode === "web";
     if (isWebDevice && mediaPlanes.length > 2) {
       const distances = {
-        curve: 10.2,
-        horizontal: 9.7,
-        coverflow: 9.4,
-        fan: 9.2,
+        curve: 8.2,
+        horizontal: 7.8,
+        coverflow: 7.5,
+        fan: 7.3,
       };
-      return distances[layout] || 9.5;
+      return distances[layout] || 7.6;
     }
     if (mediaPlanes.length <= 2) return 8 + boost;
     const distances = {
@@ -1725,12 +1725,12 @@
     const center = new THREE.Vector3();
     bobContainer.getWorldPosition(center);
 
-    const zoomDistance = deviceMode === "web" ? (window.innerWidth < 768 ? 7.4 : 6.4) : 5.0;
+    const zoomDistance = deviceMode === "web" ? (window.innerWidth < 768 ? 6.2 : 4.8) : 4.35;
     const targetPoint = center.clone().add(new THREE.Vector3(0, 0.08, 0));
     const zoomCameraPos = new THREE.Vector3(center.x, center.y + 0.12, center.z + zoomDistance);
 
     const baseScale = devicePreviewSnapshot?.phoneScale || phoneGroup.scale.clone();
-    const zoomScale = baseScale.clone().multiplyScalar(deviceMode === "web" ? 1.04 : window.innerWidth < 768 ? 1.14 : 1.2);
+    const zoomScale = baseScale.clone().multiplyScalar(deviceMode === "web" ? (window.innerWidth < 768 ? 1.12 : 1.22) : window.innerWidth < 768 ? 1.2 : 1.28);
 
     gsap.killTweensOf([camera.position, controls.target, phoneGroup.scale, phoneGroup.position, phoneGroup.rotation]);
 
