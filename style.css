@@ -488,8 +488,7 @@ body {
 
   #promoOverlay {
     align-items: flex-start !important;
-    background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.92) 205px, rgba(0, 0, 0, 0.1) 330px, rgba(0, 0, 0, 0.14) calc(100% - 180px), rgba(0, 0, 0, 0.92) calc(100% - 118px), rgba(0, 0, 0, 0.98) 100%) !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.92) 205px, rgba(0, 0, 0, 0.1) 330px, rgba(0, 0, 0, 0.14) calc(100% - 180px), rgba(0, 0, 0, 0.92) calc(100% - 118px), rgba(0, 0, 0, 0.98) 100%) !important;
     justify-content: flex-start !important;
     padding: 86px 14px 150px !important;
   }
@@ -802,4 +801,64 @@ body {
   background: rgba(10, 10, 12, 0.92) !important;
   border-color: rgba(255, 255, 255, 0.22) !important;
   color: #ffffff !important;
+}
+.cv-shine-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow:
+    0 0 18px rgba(0, 210, 122, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.cv-shine-btn::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: -70%;
+  z-index: -1;
+  width: 45%;
+  height: 260%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.08) 30%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.08) 70%, transparent 100%);
+  transform: rotate(22deg);
+  animation: cvGlassShine 2.4s ease-in-out infinite;
+}
+
+.cv-shine-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), transparent 35%), rgba(0, 210, 122, 0.08);
+  opacity: 0.75;
+}
+
+.cv-shine-btn:hover {
+  box-shadow:
+    0 0 28px rgba(0, 210, 122, 0.42),
+    0 0 55px rgba(0, 210, 122, 0.16),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.cv-shine-btn:hover::before {
+  animation-duration: 1.3s;
+}
+
+@keyframes cvGlassShine {
+  0% {
+    left: -75%;
+  }
+
+  45%,
+  100% {
+    left: 125%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-shine-btn::before {
+    animation: none;
+    left: 120%;
+  }
 }
