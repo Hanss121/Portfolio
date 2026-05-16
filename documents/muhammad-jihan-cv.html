@@ -7,7 +7,7 @@
     <style>
       @page {
         size: A4;
-        margin: 12mm;
+        margin: 11mm;
       }
 
       * {
@@ -17,8 +17,8 @@
       body {
         color: #111827;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 9.6px;
-        line-height: 1.38;
+        font-size: 10.1px;
+        line-height: 1.42;
         margin: 0;
       }
 
@@ -30,7 +30,7 @@
       }
 
       .page {
-        min-height: 273mm;
+        min-height: 275mm;
       }
 
       .header {
@@ -39,11 +39,11 @@
         display: flex;
         gap: 18px;
         justify-content: space-between;
-        padding-bottom: 11px;
+        padding-bottom: 12px;
       }
 
       .name {
-        font-size: 28px;
+        font-size: 29px;
         font-weight: 800;
         letter-spacing: 0.3px;
         line-height: 1;
@@ -51,21 +51,21 @@
 
       .role {
         color: #047857;
-        font-size: 12px;
+        font-size: 12.6px;
         font-weight: 700;
         margin-top: 5px;
       }
 
       .summary {
         color: #374151;
-        font-size: 10.3px;
+        font-size: 10.7px;
         margin-top: 8px;
         max-width: 560px;
       }
 
       .contact {
         color: #374151;
-        font-size: 9.3px;
+        font-size: 9.6px;
         line-height: 1.55;
         min-width: 210px;
         text-align: right;
@@ -77,28 +77,28 @@
 
       .grid {
         display: grid;
-        gap: 14px;
-        grid-template-columns: 1.15fr 0.85fr;
-        margin-top: 13px;
+        gap: 15px;
+        grid-template-columns: 1.18fr 0.82fr;
+        margin-top: 15px;
       }
 
       .section {
-        margin-bottom: 12px;
+        margin-bottom: 13px;
       }
 
       .section-title {
         border-bottom: 1px solid #d1d5db;
         color: #111827;
-        font-size: 11px;
+        font-size: 11.3px;
         font-weight: 800;
         letter-spacing: 0.9px;
-        margin-bottom: 7px;
+        margin-bottom: 8px;
         padding-bottom: 3px;
         text-transform: uppercase;
       }
 
       .item {
-        margin-bottom: 8px;
+        margin-bottom: 9px;
       }
 
       .item-head {
@@ -109,37 +109,37 @@
       }
 
       .item-title {
-        font-size: 10.6px;
+        font-size: 11px;
         font-weight: 800;
       }
 
       .item-meta {
         color: #047857;
-        font-size: 8.8px;
+        font-size: 9px;
         font-weight: 700;
         white-space: nowrap;
       }
 
       .item-subtitle {
         color: #4b5563;
-        font-size: 9.1px;
+        font-size: 9.5px;
         font-weight: 700;
         margin-top: 1px;
       }
 
       ul {
-        margin: 4px 0 0;
+        margin: 5px 0 0;
         padding-left: 14px;
       }
 
       li {
-        margin-bottom: 2.5px;
+        margin-bottom: 3px;
       }
 
       .tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 5px;
       }
 
       .tag {
@@ -147,15 +147,15 @@
         border: 1px solid #a7f3d0;
         border-radius: 999px;
         color: #065f46;
-        font-size: 8.6px;
+        font-size: 9px;
         font-weight: 700;
-        padding: 2.5px 6px;
+        padding: 3px 6.5px;
       }
 
       .compact-list {
         color: #374151;
         display: grid;
-        gap: 4px;
+        gap: 5px;
       }
 
       .compact-list strong {
@@ -164,29 +164,83 @@
 
       .project-line {
         border-left: 3px solid #00d27a;
-        margin-bottom: 6px;
-        padding-left: 7px;
+        margin-bottom: 7px;
+        padding-left: 8px;
       }
 
       .project-line strong {
         display: block;
-        font-size: 9.8px;
+        font-size: 10.3px;
       }
 
       .project-line span {
         color: #4b5563;
         display: block;
-        font-size: 8.9px;
+        font-size: 9.3px;
         margin-top: 1px;
       }
 
       .footer-note {
         border-top: 1px solid #e5e7eb;
         color: #6b7280;
-        font-size: 8px;
-        margin-top: 8px;
-        padding-top: 6px;
+        font-size: 8.4px;
+        margin-top: 10px;
+        padding-top: 7px;
         text-align: center;
+      }
+
+      .bottom-grid {
+        border-top: 1px solid #d1d5db;
+        display: grid;
+        gap: 9px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 13px;
+        padding-top: 11px;
+      }
+
+      .bottom-card {
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        min-height: 78px;
+        padding: 9px;
+      }
+
+      .bottom-card strong {
+        color: #047857;
+        display: block;
+        font-size: 10px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+
+      .bottom-card p {
+        color: #374151;
+        font-size: 9.2px;
+      }
+
+      .focus-strip {
+        background: #ecfdf5;
+        border: 1px solid #a7f3d0;
+        border-radius: 8px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 12px;
+        padding: 10px 12px;
+      }
+
+      .focus-strip strong {
+        color: #065f46;
+        display: block;
+        font-size: 10.2px;
+        margin-bottom: 3px;
+        text-transform: uppercase;
+      }
+
+      .focus-strip p {
+        color: #374151;
+        font-size: 9.3px;
       }
     </style>
   </head>
@@ -195,16 +249,16 @@
       <header class="header">
         <div>
           <h1 class="name">Muhammad Jihan</h1>
-          <p class="role">Full Stack & Mobile Developer | UI/UX Designer</p>
+          <p class="role">Web & Mobile Developer | UI/UX Designer</p>
           <p class="summary">
-            Developer yang fokus membangun aplikasi bisnis, dashboard operasional, aplikasi mobile offline-first, dan UI/UX produk digital untuk UMKM serta kebutuhan administrasi. Terbiasa menyusun alur fitur, struktur data, dan tampilan yang mudah digunakan.
+            Developer yang fokus membangun aplikasi web responsif, aplikasi mobile offline-first, dashboard operasional, dan UI/UX produk digital untuk UMKM serta kebutuhan administrasi. Terbiasa menerjemahkan masalah bisnis menjadi alur fitur, struktur data, tampilan yang mudah digunakan, dan sistem yang siap dikembangkan.
           </p>
         </div>
         <div class="contact">
           <p><strong>Email</strong><br />MuhammadJihan121@gmail.com</p>
           <p><strong>Telepon / WhatsApp</strong><br />0822-4314-3115</p>
           <p><strong>Lokasi</strong><br />Demak, Indonesia</p>
-          <p><strong>Portfolio</strong><br />github.com/Hanss121/Portfolio</p>
+          <p><strong>Portfolio</strong><br />https://github.com/Hanss121/Portfolio</p>
         </div>
       </header>
 
@@ -214,24 +268,26 @@
             <h2 class="section-title">Fokus Pengalaman</h2>
             <div class="item">
               <div class="item-head">
-                <h3 class="item-title">Aplikasi bisnis offline-first</h3>
+                <h3 class="item-title">Pengembangan aplikasi mobile offline-first</h3>
                 <span class="item-meta">2025</span>
               </div>
               <p class="item-subtitle">ABROOF, TokoKu, MyRT14</p>
               <ul>
                 <li>Merancang alur transaksi, stok, keuangan, data warga, kas, iuran, dan laporan agar tetap bisa digunakan walau koneksi terbatas.</li>
-                <li>Membangun struktur modul yang memisahkan data inti seperti barang, transaksi, kategori, warga, dan riwayat pembayaran.</li>
+                <li>Membangun struktur modul yang memisahkan barang, transaksi, kategori, warga, riwayat pembayaran, pencarian, dan backup data.</li>
+                <li>Mengutamakan flow operasional yang cepat untuk pengguna non-teknis: input data, cek status, rekap, dan laporan.</li>
               </ul>
             </div>
             <div class="item">
               <div class="item-head">
-                <h3 class="item-title">Dashboard & website operasional</h3>
+                <h3 class="item-title">Website bisnis & dashboard operasional</h3>
                 <span class="item-meta">2025</span>
               </div>
               <p class="item-subtitle">GK Rent Car, Makanan Nusantara, InventoryPRO</p>
               <ul>
                 <li>Membangun landing page bisnis, katalog, CTA booking, dashboard stok, tabel data, ringkasan metrik, dan layout responsif.</li>
-                <li>Menata hierarki informasi agar data penting mudah discan dan mendukung keputusan operasional.</li>
+                <li>Menata hierarki informasi agar data penting mudah discan, mendukung keputusan operasional, dan tetap nyaman di mobile.</li>
+                <li>Menerapkan komponen UI yang konsisten untuk card, tabel, filter, chart, modal detail, dan navigasi.</li>
               </ul>
             </div>
             <div class="item">
@@ -242,6 +298,7 @@
               <p class="item-subtitle">GikuRental, TokoKu</p>
               <ul>
                 <li>Menyusun flow pengguna, komponen UI, aturan warna, spacing, dan prototype yang siap diterjemahkan ke implementasi.</li>
+                <li>Mendesain halaman yang fokus pada tujuan pengguna: booking, transaksi cepat, pencarian data, dan pemahaman informasi.</li>
               </ul>
             </div>
           </div>
@@ -250,7 +307,7 @@
             <h2 class="section-title">Proyek Pilihan</h2>
             <div class="project-line">
               <strong>ABROOF</strong>
-              <span>Aplikasi mobile manajemen stok, transaksi, pembayaran, backup cloud, dan laporan keuangan untuk UMKM.</span>
+              <span>Aplikasi mobile manajemen stok, transaksi, pembayaran, backup cloud, laporan keuangan, dan alur offline-first untuk UMKM.</span>
             </div>
             <div class="project-line">
               <strong>MyRT14</strong>
@@ -258,7 +315,7 @@
             </div>
             <div class="project-line">
               <strong>InventoryPRO</strong>
-              <span>Dashboard inventaris web untuk monitoring stok, data barang, ringkasan operasional, tabel, filter, dan chart.</span>
+              <span>Dashboard inventaris web untuk monitoring stok, data barang, ringkasan operasional, tabel, filter, chart, dan evaluasi data.</span>
             </div>
             <div class="project-line">
               <strong>GK Rent Car</strong>
@@ -280,7 +337,7 @@
                 <span class="item-meta">2021-2025</span>
               </div>
               <p class="item-subtitle">Universitas AKI - Semarang</p>
-              <p>Fondasi rekayasa perangkat lunak, pengembangan web, mobile, database, dan sistem informasi.</p>
+              <p>Fondasi rekayasa perangkat lunak, pengembangan web, mobile, database, sistem informasi, dan analisis kebutuhan pengguna.</p>
             </div>
           </div>
 
@@ -305,30 +362,58 @@
               <span class="tag">Figma</span>
               <span class="tag">Chart.js</span>
               <span class="tag">UI/UX</span>
+              <span class="tag">Responsive Design</span>
             </div>
           </div>
 
           <div class="section">
             <h2 class="section-title">Kemampuan Utama</h2>
             <div class="compact-list">
-              <p><strong>Mobile:</strong> aplikasi Flutter, database lokal, offline-first, transaksi, laporan, backup.</p>
-              <p><strong>Web:</strong> landing page bisnis, dashboard, komponen responsif, tabel, chart, dan CTA.</p>
-              <p><strong>UI/UX:</strong> user flow, prototype, design system, hierarki informasi, dan usability.</p>
-              <p><strong>Operasional:</strong> stok, kas, iuran, order tracking, inventaris, dan administrasi data.</p>
+              <p><strong>Mobile:</strong> Flutter app, database lokal, offline-first, transaksi, laporan, pencarian, backup, dan data operasional.</p>
+              <p><strong>Web:</strong> landing page bisnis, dashboard, komponen responsif, tabel, chart, filter, modal, dan CTA konversi.</p>
+              <p><strong>UI/UX:</strong> user flow, wireframe, prototype, design system, hierarki informasi, usability, dan handoff desain.</p>
+              <p><strong>Produk bisnis:</strong> stok, kas, iuran, order tracking, inventaris, administrasi warga, katalog, dan laporan.</p>
             </div>
           </div>
 
           <div class="section">
             <h2 class="section-title">Tools & Pendekatan</h2>
             <div class="compact-list">
-              <p>Figma, Git, Google Drive backup, responsive design, component-based UI, local-first data, dan validasi alur pengguna.</p>
+              <p>Figma, Git, Google Drive backup, responsive design, component-based UI, local-first data, validasi alur pengguna, dan dokumentasi fitur.</p>
+              <p>Terbiasa bekerja dari problem, merapikan kebutuhan, membuat struktur fitur, lalu menurunkannya menjadi UI dan implementasi.</p>
               <p>Sedang memperdalam Rust dan backend engineering untuk memperkuat kemampuan sistem.</p>
             </div>
           </div>
         </aside>
       </div>
 
-      <p class="footer-note">CV ringkas satu halaman ini disusun dari data portfolio Muhammad Jihan.</p>
+      <section class="bottom-grid" aria-label="Highlight kompetensi">
+        <div class="bottom-card">
+          <strong>Web Development</strong>
+          <p>Membuat landing page, dashboard, katalog, form, filter, tabel, chart, modal detail, dan CTA yang responsif serta mudah dipahami pengguna.</p>
+        </div>
+        <div class="bottom-card">
+          <strong>Mobile Development</strong>
+          <p>Membangun aplikasi Flutter untuk transaksi, stok, kas, iuran, order tracking, pencarian data, laporan, dan penyimpanan lokal offline-first.</p>
+        </div>
+        <div class="bottom-card">
+          <strong>UI/UX Product</strong>
+          <p>Menyusun alur pengguna, prioritas informasi, desain komponen, prototype, dan tampilan yang fokus pada efisiensi kerja pengguna akhir.</p>
+        </div>
+      </section>
+
+      <section class="focus-strip" aria-label="Target kontribusi">
+        <div>
+          <strong>Target Kontribusi</strong>
+          <p>Membantu tim atau bisnis membangun produk digital yang jelas alurnya, mudah dipakai, responsif, dan relevan dengan kebutuhan operasional nyata.</p>
+        </div>
+        <div>
+          <strong>Portfolio Online</strong>
+          <p>Project case study, preview UI, showcase 3D, dan detail pekerjaan dapat dilihat melalui: https://github.com/Hanss121/Portfolio</p>
+        </div>
+      </section>
+
+      <p class="footer-note">Portfolio: https://github.com/Hanss121/Portfolio | CV satu halaman A4 - Muhammad Jihan</p>
     </main>
   </body>
 </html>
