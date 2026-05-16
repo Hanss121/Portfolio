@@ -1725,7 +1725,7 @@
     const center = new THREE.Vector3();
     bobContainer.getWorldPosition(center);
 
-    const zoomDistance = deviceMode === "web" ? (window.innerWidth < 768 ? 6.2 : 4.8) : 4.35;
+    const zoomDistance = deviceMode === "web" ? (window.innerWidth < 768 ? 6.2 : 4.8) : 5.5;
     const targetPoint = center.clone().add(new THREE.Vector3(0, 0.08, 0));
     const zoomCameraPos = new THREE.Vector3(center.x, center.y + 0.12, center.z + zoomDistance);
 
@@ -1758,8 +1758,10 @@
       ease: "back.out(1.15)",
     });
 
+    const previewYOffset = deviceMode === "web" ? 0.08 : 0.35;
+
     gsap.to(phoneGroup.position, {
-      y: (devicePreviewSnapshot?.phonePosition?.y || 0) + 0.08,
+      y: (devicePreviewSnapshot?.phonePosition?.y || 0) + previewYOffset,
       duration: 0.85,
       ease: "power3.out",
     });
