@@ -7,19 +7,25 @@
     <style>
       @page {
         size: A4;
-        margin: 10mm;
+        margin: 9mm;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         color: #111827;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 9.6px;
-        line-height: 1.34;
-        margin: 0;
+        font-size: 10.7px;
+        line-height: 1.38;
+        background: #ffffff;
       }
 
       h1,
@@ -29,137 +35,173 @@
         margin: 0;
       }
 
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
       .page {
-        min-height: 277mm;
+        width: 100%;
+        min-height: 279mm;
       }
 
       .header {
-        border-bottom: 2px solid #111827;
-        padding-bottom: 7px;
+        border-bottom: 2.4px solid #111827;
+        padding-bottom: 8px;
       }
 
       .topline {
         align-items: flex-start;
         display: flex;
+        gap: 16px;
         justify-content: space-between;
-        gap: 14px;
       }
 
       .name {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 800;
-        letter-spacing: 0.2px;
+        letter-spacing: 0.1px;
         line-height: 1;
       }
 
       .role {
         color: #047857;
-        font-size: 11px;
+        font-size: 12.2px;
         font-weight: 700;
-        margin-top: 4px;
+        margin-top: 5px;
       }
 
       .contact {
         color: #374151;
-        font-size: 8.8px;
-        line-height: 1.4;
+        font-size: 9.7px;
+        line-height: 1.45;
         text-align: right;
+        white-space: nowrap;
       }
 
       .summary {
         color: #374151;
-        font-size: 9.8px;
-        margin-top: 7px;
+        font-size: 10.8px;
+        margin-top: 8px;
       }
 
       .section {
-        margin-top: 9px;
+        margin-top: 10px;
       }
 
       .section-title {
-        border-bottom: 1px solid #d1d5db;
+        border-bottom: 1.4px solid #d1d5db;
         color: #111827;
-        font-size: 10.2px;
+        font-size: 11.2px;
         font-weight: 800;
-        letter-spacing: 0.7px;
-        margin-bottom: 5px;
+        letter-spacing: 0.75px;
+        margin-bottom: 6px;
         padding-bottom: 2px;
         text-transform: uppercase;
       }
 
       .skills-grid {
         display: grid;
-        gap: 3px 12px;
+        gap: 4px 14px;
         grid-template-columns: 1fr 1fr;
+      }
+
+      .skill-line,
+      .project-meta,
+      .edu-line,
+      li {
+        color: #374151;
       }
 
       .skill-line strong,
       .project-meta strong,
-      .edu-line strong {
+      .edu-line strong,
+      li strong {
         color: #111827;
       }
 
-      .skill-line {
-        color: #374151;
-      }
-
       .project {
-        border-left: 3px solid #10b981;
-        margin-bottom: 7px;
-        padding-left: 7px;
+        border-left: 3.5px solid #10b981;
+        margin-bottom: 8.5px;
+        padding-left: 8px;
       }
 
       .project-head {
         align-items: baseline;
         display: flex;
-        gap: 8px;
+        gap: 10px;
         justify-content: space-between;
       }
 
       .project-title {
-        font-size: 10.4px;
+        font-size: 11.6px;
         font-weight: 800;
+        letter-spacing: 0.1px;
       }
 
       .project-type {
         color: #047857;
-        font-size: 8.6px;
+        font-size: 9.6px;
         font-weight: 700;
         white-space: nowrap;
       }
 
       .project-meta {
-        color: #374151;
-        margin-top: 1px;
+        font-size: 10.5px;
+        margin-top: 2px;
       }
 
       ul {
-        margin: 3px 0 0;
-        padding-left: 13px;
+        margin: 4px 0 0;
+        padding-left: 15px;
       }
 
       li {
-        margin-bottom: 2px;
+        margin-bottom: 2.8px;
       }
 
       .two-col {
         display: grid;
-        gap: 12px;
+        gap: 14px;
         grid-template-columns: 1fr 1fr;
       }
 
       .edu-line {
-        color: #374151;
-        margin-bottom: 4px;
+        margin-bottom: 5px;
       }
 
       .footer {
-        border-top: 1px solid #d1d5db;
+        border-top: 1.3px solid #d1d5db;
         color: #6b7280;
-        font-size: 8px;
-        margin-top: 7px;
-        padding-top: 5px;
+        font-size: 9.2px;
+        margin-top: 9px;
+        padding-top: 6px;
         text-align: center;
+      }
+
+      @media screen {
+        body {
+          background: #e5e7eb;
+          padding: 24px 0;
+        }
+
+        .page {
+          background: #ffffff;
+          box-shadow: 0 10px 28px rgba(17, 24, 39, 0.16);
+          margin: 0 auto;
+          padding: 9mm;
+          width: 210mm;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        .page {
+          padding: 0;
+        }
       }
     </style>
   </head>
@@ -169,41 +211,42 @@
         <div class="topline">
           <div>
             <h1 class="name">Muhammad Jihan</h1>
-            <p class="role">Web & Mobile Developer | UI/UX Designer</p>
+            <p class="role">Junior Web & Mobile Developer | UI/UX Designer</p>
           </div>
           <div class="contact">
             Demak, Indonesia | 0822-4314-3115 | MuhammadJihan121@gmail.com<br />
-            Portfolio: https://muhammad-jihan-portfolio.vercel.app
+            Portfolio: <a href="https://muhammad-jihan-portfolio.vercel.app">muhammad-jihan-portfolio.vercel.app</a>
           </div>
         </div>
         <p class="summary">
-          Fresh graduate Teknik Informatika yang fokus pada pengembangan web responsif, aplikasi mobile Flutter, dan UI/UX produk digital. Memiliki pengalaman project personal/akademik untuk kebutuhan UMKM dan administrasi, mulai dari analisis kebutuhan, desain alur, implementasi UI, pengelolaan data lokal, hingga penyusunan fitur operasional seperti stok, transaksi, laporan, dan dashboard.
+          Fresh graduate Teknik Informatika dengan fokus pada pengembangan web responsif, aplikasi mobile Flutter, dan UI/UX produk digital. Berpengalaman membuat proyek personal dan akademik untuk kebutuhan UMKM serta administrasi,
+          mencakup analisis kebutuhan, desain alur, implementasi UI, pengelolaan data lokal, serta fitur operasional seperti stok, transaksi, laporan, dan dashboard.
         </p>
       </header>
 
       <section class="section">
         <h2 class="section-title">Keahlian Teknis</h2>
         <div class="skills-grid">
-          <p class="skill-line"><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, responsive layout</p>
-          <p class="skill-line"><strong>Mobile:</strong> Flutter, Dart, Hive, Firebase, offline-first flow, local data storage</p>
-          <p class="skill-line"><strong>Backend/API:</strong> Node.js, Express.js dasar, PHP, REST API dasar, integrasi data</p>
-          <p class="skill-line"><strong>Database/Data:</strong> MySQL, Hive, data analytics dasar, data visualization, Chart.js</p>
-          <p class="skill-line"><strong>UI/UX:</strong> Figma, wireframe, prototype, design system, user flow, usability, handoff desain</p>
-          <p class="skill-line"><strong>Tools:</strong> Git, GitHub, Google Drive backup, browser DevTools, dokumentasi fitur</p>
+          <p class="skill-line"><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Responsive Design</p>
+          <p class="skill-line"><strong>Mobile:</strong> Flutter, Dart, Hive, Firebase, Offline-first Flow, Local Data Storage</p>
+          <p class="skill-line"><strong>Backend/API:</strong> Node.js, Express.js dasar, PHP, REST API dasar, Integrasi Data</p>
+          <p class="skill-line"><strong>Database/Data:</strong> MySQL, Hive, Data Analytics dasar, Data Visualization, Chart.js</p>
+          <p class="skill-line"><strong>UI/UX:</strong> Figma, Wireframe, Prototype, Design System, User Flow, Usability, Handoff Desain</p>
+          <p class="skill-line"><strong>Tools:</strong> Git, GitHub, Google Drive Backup, Browser DevTools, Dokumentasi Fitur</p>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-title">Project Pilihan</h2>
+        <h2 class="section-title">Proyek Pilihan</h2>
 
         <article class="project">
           <div class="project-head">
             <h3 class="project-title">ABROOF</h3>
             <span class="project-type">Aplikasi Mobile Manajemen Bisnis</span>
           </div>
-          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, Hive, Google Drive backup</p>
+          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, Hive, Google Drive Backup</p>
           <ul>
-            <li><strong>Fitur utama:</strong> manajemen stok, transaksi, pembayaran, laporan keuangan, riwayat, dan backup data.</li>
+            <li><strong>Fitur:</strong> manajemen stok, transaksi, pembayaran, laporan keuangan, riwayat, dan backup data.</li>
             <li><strong>Kontribusi:</strong> merancang flow operasional, struktur data lokal, UI mobile, dan alur offline-first untuk pengguna UMKM.</li>
             <li><strong>Dampak:</strong> membantu pencatatan bisnis lebih terpusat dan tetap dapat digunakan saat koneksi tidak stabil.</li>
           </ul>
@@ -214,9 +257,9 @@
             <h3 class="project-title">MyRT14</h3>
             <span class="project-type">Aplikasi Mobile Administrasi</span>
           </div>
-          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, penyimpanan lokal, OCR dasar</p>
+          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, Penyimpanan Lokal, OCR dasar</p>
           <ul>
-            <li><strong>Fitur utama:</strong> data warga, kartu keluarga, kas, iuran, pencarian, rekap, dan laporan administrasi RT.</li>
+            <li><strong>Fitur:</strong> data warga, kartu keluarga, kas, iuran, pencarian, rekap, dan laporan administrasi RT.</li>
             <li><strong>Kontribusi:</strong> menyusun modul data, tampilan input, pencarian, dan alur pencatatan pembayaran/iuran.</li>
             <li><strong>Dampak:</strong> mengurangi ketergantungan pada pencatatan manual dan mempercepat pencarian data warga.</li>
           </ul>
@@ -229,7 +272,7 @@
           </div>
           <p class="project-meta"><strong>Teknologi:</strong> React, Tailwind CSS, Chart.js, Node.js</p>
           <ul>
-            <li><strong>Fitur utama:</strong> dashboard ringkasan stok, tabel barang, filter data, chart, dan visualisasi kondisi inventaris.</li>
+            <li><strong>Fitur:</strong> dashboard ringkasan stok, tabel barang, filter data, chart, dan visualisasi kondisi inventaris.</li>
             <li><strong>Kontribusi:</strong> membangun layout dashboard, komponen tabel/card, tampilan chart, dan struktur halaman yang responsif.</li>
             <li><strong>Dampak:</strong> memudahkan pemantauan stok dan membantu pengguna membaca kondisi inventaris secara cepat.</li>
           </ul>
@@ -240,9 +283,9 @@
             <h3 class="project-title">GK Rent Car</h3>
             <span class="project-type">Landing Page Bisnis</span>
           </div>
-          <p class="project-meta"><strong>Teknologi:</strong> React, Tailwind CSS, responsive UI, WhatsApp CTA</p>
+          <p class="project-meta"><strong>Teknologi:</strong> React, Tailwind CSS, Responsive UI, WhatsApp CTA</p>
           <ul>
-            <li><strong>Fitur utama:</strong> katalog armada, informasi layanan, galeri, CTA booking WhatsApp, dan navigasi responsif.</li>
+            <li><strong>Fitur:</strong> katalog armada, informasi layanan, galeri, CTA booking WhatsApp, dan navigasi responsif.</li>
             <li><strong>Kontribusi:</strong> menyusun struktur halaman, hierarki konten, komponen UI, dan CTA yang mudah ditemukan.</li>
             <li><strong>Dampak:</strong> membuat informasi layanan rental lebih jelas dan mengarahkan calon pelanggan ke proses booking.</li>
           </ul>
@@ -253,9 +296,9 @@
             <h3 class="project-title">TokoKu & GikuRental</h3>
             <span class="project-type">POS App & Prototype UI/UX</span>
           </div>
-          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, Hive, Figma, prototyping</p>
+          <p class="project-meta"><strong>Teknologi:</strong> Flutter, Dart, Hive, Figma, Prototyping</p>
           <ul>
-            <li><strong>Fitur utama:</strong> alur transaksi POS, dashboard bisnis, personalisasi toko, landing page rental, dan prototype UI.</li>
+            <li><strong>Fitur:</strong> alur transaksi POS, dashboard bisnis, personalisasi toko, landing page rental, dan prototype UI.</li>
             <li><strong>Kontribusi:</strong> membuat user flow, wireframe/prototype, desain komponen, dan struktur navigasi sesuai kebutuhan pengguna.</li>
             <li><strong>Dampak:</strong> menghasilkan rancangan produk yang lebih mudah dipahami sebelum masuk tahap implementasi penuh.</li>
           </ul>
@@ -276,7 +319,7 @@
         </div>
       </section>
 
-      <p class="footer">Portfolio: https://muhammad-jihan-portfolio.vercel.app | Target: Junior Frontend Developer, Web Developer, Mobile Developer, UI/UX Designer</p>
+      <p class="footer">Portfolio berisi case study, preview UI, dan detail proyek: <a href="https://muhammad-jihan-portfolio.vercel.app">muhammad-jihan-portfolio.vercel.app</a> | Target: Junior Frontend / Web / Mobile Developer</p>
     </main>
   </body>
 </html>
